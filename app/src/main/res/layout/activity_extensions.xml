@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".ExtensionsActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/lenghtWithoutExBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#9C27B0"
+                android:text="Length without extension"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/removeSpaceBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#C465D5"
+                android:text="remove Spaces"
+                app:layout_constraintEnd_toEndOf="@+id/lenghtWithoutExBtn"
+                app:layout_constraintStart_toStartOf="@+id/lenghtWithoutExBtn"
+                app:layout_constraintTop_toBottomOf="@+id/lenghtWithoutExBtn" />
+
+            <Button
+                android:id="@+id/remove_underscores_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#9C27B0"
+                android:text="remove _ Button"
+                app:layout_constraintEnd_toEndOf="@+id/removeSpaceBtn"
+                app:layout_constraintStart_toStartOf="@+id/removeSpaceBtn"
+                app:layout_constraintTop_toBottomOf="@+id/removeSpaceBtn" />
+
+            <Button
+                android:id="@+id/VowelWithExten_Btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#48778C"
+                android:text="Vowel With ExtenSion"
+                app:layout_constraintEnd_toEndOf="@+id/remove_underscores_btn"
+                app:layout_constraintStart_toStartOf="@+id/remove_underscores_btn"
+                app:layout_constraintTop_toBottomOf="@+id/remove_underscores_btn" />
+
+            <Button
+                android:id="@+id/LenghtBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#9C27B0"
+                android:text="Count total Length"
+                app:layout_constraintEnd_toEndOf="@+id/VowelWithExten_Btn"
+                app:layout_constraintStart_toStartOf="@+id/VowelWithExten_Btn"
+                app:layout_constraintTop_toBottomOf="@+id/VowelWithExten_Btn" />
+
+            <Button
+                android:id="@+id/replaceSpaceWithDashBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#51748F"
+                android:text="Replzce Space with _"
+                app:layout_constraintEnd_toEndOf="@+id/LenghtBtn"
+                app:layout_constraintStart_toStartOf="@+id/LenghtBtn"
+                app:layout_constraintTop_toBottomOf="@+id/LenghtBtn" />
+
+            <Button
+                android:id="@+id/extensionBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#9C27B0"
+                android:text="show extension"
+                app:layout_constraintEnd_toEndOf="@+id/replaceSpaceWithDashBtn"
+                app:layout_constraintStart_toStartOf="@+id/replaceSpaceWithDashBtn"
+                app:layout_constraintTop_toBottomOf="@+id/replaceSpaceWithDashBtn" />
+
+            <Button
+                android:id="@+id/UpperCase_ExtBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#45637A"
+                android:text="Change Extension to Uper Case"
+                app:layout_constraintEnd_toEndOf="@+id/extensionBtn"
+                app:layout_constraintStart_toStartOf="@+id/extensionBtn"
+                app:layout_constraintTop_toBottomOf="@+id/extensionBtn" />
+
+            <Button
+                android:id="@+id/name_UpperBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#9C27B0"
+                android:text="change name to upperCase"
+                app:layout_constraintEnd_toEndOf="@+id/UpperCase_ExtBtn"
+                app:layout_constraintStart_toStartOf="@+id/UpperCase_ExtBtn"
+                app:layout_constraintTop_toBottomOf="@+id/UpperCase_ExtBtn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
